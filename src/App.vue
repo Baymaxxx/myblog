@@ -1,21 +1,17 @@
 <template>
   <div id="app">
-    <ul class="tab">
-      <li class="tab-item">
-        <router-link to="/foo">foo</router-link>
-      </li>
-      <li class="tab-item">
-        <router-link to="/bar">bar</router-link>
-      </li>
-    </ul>
+    <div class="tab">
+      <router-link class="tab-item" to="/index">foo</router-link>
+      <router-link class="tab-item" to="/about">bar</router-link>
+    </div>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'app'
-  }
+    name: 'app',
+  };
 </script>
 
 <style lang="less" rel="stylesheet/less">
@@ -30,11 +26,9 @@
       flex: 1;
       border-right: 1px solid #fff;
       text-align: center;
-      :last-child{
+      color: #fff;
+      :last-child {
         border-right: 0;
-      }
-      & > a {
-        color: #fff;
       }
     }
   }
