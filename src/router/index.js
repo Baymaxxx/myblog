@@ -10,38 +10,39 @@ import TagPage from '../components/pages/tag-detail';
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   linkActiveClass: 'active',
   routes: [{
-    path: '/index',
+    path: '/',
     name: 'home',
-    component: IndexPage,
+    component: IndexPage
   },
     {
       path: '/post',
       name: 'post',
-      component: PostPage,
+      component: PostPage
     },
     {
       path: '/tags',
       name: 'tags',
-      component: TagsPage,
+      component: TagsPage
     },
     // 动态路由匹配, 以下的路由规则可以匹配 /tags/webpack | /tags/html 等路由
     // 然后用TagPage组件去进行页面的渲染
     {
       path: '/tags/:tag',
       name: 'tagDetail',
-      component: TagPage,
+      component: TagPage
     },
     {
       path: '/archive',
       name: 'archive',
-      component: ArchivePage,
+      component: ArchivePage
     },
     {
       path: '/about',
       name: 'about',
-      component: AboutPage,
-    },
+      component: AboutPage
+    }
   ],
 });

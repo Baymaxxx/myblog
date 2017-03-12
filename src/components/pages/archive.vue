@@ -1,6 +1,7 @@
 <template>
   <div>
-    <p>1222</p>
+    <p>122
+      12</p>
   </div>
 </template>
 <style lang="less">

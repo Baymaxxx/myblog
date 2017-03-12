@@ -13,7 +13,6 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 // 路由器会创建一个 App 实例，并且挂载到选择符 #app 匹配的元素上。
 new Vue({
-  router: router,
+  router,
   render: h => h(App),
 }).$mount('#app');
-router.push('/index');

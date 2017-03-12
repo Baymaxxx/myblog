@@ -34,7 +34,7 @@ module.exports = {
     "no-control-regex":2,
 // 数组和对象键值对最后一个逗号， never参数：不能带末尾的逗号, always参数：必须带末尾的逗号，
 // always-multiline：多行模式必须带逗号，单行模式不能带逗号
-    "comma-dangle": [1,"always-multiline"],
+    "comma-dangle": [0,"never"],
 // 禁用 debugger
     "no-debugger":2,
 // 禁止 function 定义中出现重名参数
@@ -312,12 +312,12 @@ module.exports = {
 // 强制使用命名的 function 表达式
     "func-names":0,
 // 文件末尾强制换行
-    "eol-last":2,
+    "eol-last":0,
     "indent": [0,4, {"SwitchCase":1}],
 // 强制在对象字面量的属性中键和值之间使用一致的间距
     "key-spacing": [2, {"beforeColon":false,"afterColon":true}],
-// 强制使用一致的换行风格
-    "linebreak-style": [1,"unix"],
+// // 强制使用一致的换行风格
+//     "linebreak-style": [0,"unix"],
 // 要求在注释周围有空行 ( 要求在块级注释之前有一空行)
     "lines-around-comment": [1,{"beforeBlockComment":true}],
 // 强制一致地使用函数声明或函数表达式，方法定义风格，参数：
